@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="600dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:id="@+id/toplayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/yuanhuan"
+            />
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:textColor="#4E4C4C"
+            android:textStyle="bold"
+            android:text="热播推荐"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center"
+            >
+            <TextView
+                android:id="@+id/gengduo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="更多"
+                android:textColor="#777575"
+                android:textStyle="bold"
+                />
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/qianjin"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:numColumns="2"
+        app:layout_constraintTop_toBottomOf="@id/toplayout"
+        />
+
+
+
+</android.support.constraint.ConstraintLayout>

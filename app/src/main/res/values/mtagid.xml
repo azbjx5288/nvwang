@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="playurl" type="id"/>
+    <item name="mid" type="id"/>
+    <item name="mti" type="id"/>
+    <item name="vdl" type="id"/>
+    <item name="mtg" type="id"/>
+
+</resources>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">女王</string>
+
+    //openinstall的key
+    <string name="openinstall_key">bs814u</string>
+    <string name="title_activity_init">InitActivity</string>
+</resources>

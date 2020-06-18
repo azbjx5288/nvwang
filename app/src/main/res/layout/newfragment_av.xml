@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/ tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@mipmap/toorbar_bg">
+        <!--       搜索框 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/search_bg"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            tools:ignore="RtlHardcoded">
+
+            <ImageView
+                android:id="@+id/icon_sousuo"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/sousuo_icon" />
+
+            <TextView
+                android:id="@+id/searchEdi"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/icon_sousuo"
+                android:background="@null"
+                android:cursorVisible="false"
+                android:singleLine="true"
+                android:text="搜一搜"
+                android:gravity="center"
+                android:textCursorDrawable="@null"
+                android:textSize="13sp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="#ffffff"
+        android:layout_below="@id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            >
+
+            <com.youth.banner.Banner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:image_scale_type="center_crop"
+                app:indicator_height="8dp"
+                app:indicator_margin="6dp"
+                app:indicator_width="8dp" />
+
+            <!--            视频分类-->
+            <LinearLayout
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/banner"
+                android:orientation="vertical">
+
+                <com.neinei.cong.view.MyGridView
+                    android:id="@+id/my_title_grid_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:numColumns="4" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="#fff" />
+            </LinearLayout>
+
+            <!--            视频列表-->
+<!--            暂时不同他-->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_below="@id/title"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:background="#000000"
+                android:numColumns="2" />
+<!--            类型推荐-->
+            <LinearLayout
+                android:id="@+id/fragmentlayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/title"
+                android:orientation="vertical" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
