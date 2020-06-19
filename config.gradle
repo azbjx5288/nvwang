@@ -1,6 +1,6 @@
 ext {
     android = [
-            applicationId    : "com.neinei.cong",
+            applicationId    : "com.nvwang.cong",
             compileSdkVersion: 26,
             minSdkVersion    : 19,
             targetSdkVersion : 22,

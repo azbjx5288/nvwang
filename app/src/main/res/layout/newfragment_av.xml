@@ -49,19 +49,19 @@
     </android.support.v7.widget.Toolbar>
 
 
-    <ScrollView
+    <com.neinei.cong.view.RecyclerScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
 
-        android:background="#ffffff"
-        android:layout_below="@id/toolbar">
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="3dp"
+        android:background="#ffffff">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/dp_10"
-            android:layout_marginRight="@dimen/dp_10"
-            >
+            android:layout_marginRight="@dimen/dp_10">
 
             <com.youth.banner.Banner
                 android:id="@+id/banner"
@@ -94,17 +94,17 @@
             </LinearLayout>
 
             <!--            视频列表-->
-<!--            暂时不同他-->
+            <!--            暂时不同他-->
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/recycler"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_below="@id/title"
-                android:paddingLeft="20dp"
-                android:paddingRight="20dp"
                 android:background="#000000"
-                android:numColumns="2" />
-<!--            类型推荐-->
+                android:numColumns="2"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp" />
+            <!--            类型推荐-->
             <LinearLayout
                 android:id="@+id/fragmentlayout"
                 android:layout_width="match_parent"
@@ -115,7 +115,7 @@
 
         </RelativeLayout>
 
-    </ScrollView>
+    </com.neinei.cong.view.RecyclerScrollView>
 
 
 </RelativeLayout>

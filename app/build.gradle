@@ -72,6 +72,17 @@ android {
 
     aaptOptions.useNewCruncher = false
 
+    flavorDimensions "default"
+    productFlavors {
+        //正式环境
+        prod {
+            applicationId "com.nvwang.cong"
+            signingConfig = signingConfigs.release
+
+        }
+
+    }
+
 
 }
 

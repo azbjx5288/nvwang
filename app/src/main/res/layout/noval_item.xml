@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.ty8box.blings.ui.activity.NovalListItemActivity">
+    tools:context=".ui.activity.NovalListItemActivity">
 
     <LinearLayout
         android:layout_width="match_parent"

@@ -20,7 +20,7 @@
             android:gravity="center"
             android:layout_margin="15dp"
             >
-            <com.ty8box.blings.view.MyImages
+            <com.neinei.cong.view.MyImages
                 android:id="@+id/image"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
